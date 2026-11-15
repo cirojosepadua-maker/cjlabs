@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CjLabs</title>
+<meta name="description" content="CjLabs: jogos e aplicativos.">
+<style>
+  :root { --fundo: #f6f3ea; --cartao: #fffdf7; --texto: #23263a; --suave: #5c6078; --ouro: #a8770f; --linha: #e3dccb; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --fundo: #0e1224; --cartao: #161b33; --texto: #e8e6f0; --suave: #a7a9c2; --ouro: #f2c457; --linha: #2a3152; }
+  }
+  :root[data-theme="dark"] { --fundo: #0e1224; --cartao: #161b33; --texto: #e8e6f0; --suave: #a7a9c2; --ouro: #f2c457; --linha: #2a3152; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 56px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; color: var(--ouro); }
+  .sub { color: var(--suave); margin: 0 0 32px; }
+  .jogo { display: flex; gap: 16px; align-items: center; background: var(--cartao); border: 1px solid var(--linha); border-radius: 14px; padding: 16px; }
+  .jogo img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .jogo h2 { margin: 0; font-size: 1.25rem; }
+  .jogo p { margin: 2px 0 6px; color: var(--suave); }
+  a { color: var(--ouro); }
+  footer { margin-top: 40px; color: var(--suave); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>CjLabs</h1>
+  <p class="sub">Jogos e aplicativos.</p>
+  <div class="jogo">
+    <img src="4eroes/icone.png" alt="Ícone do 4eroes">
+    <div>
+      <h2>4eroes</h2>
+      <p>Defesa cooperativa para 1 a 4 jogadores.</p>
+      <a href="4eroes/privacidade.html">Política de Privacidade</a>
+    </div>
+  </div>
+  <footer>Contato: <a href="mailto:cirojosepadua@gmail.com">cirojosepadua@gmail.com</a></footer>
+</main>
+</body>
+</html>
