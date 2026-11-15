@@ -1,62 +1,27 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Universal Mundi Guesser</title>
-    <link rel="icon" type="image/png" href="icone.png" />
-    <style>
-      :root {
-        --fundo: #eef3f8;
-        --cartao: #ffffff;
-        --texto: #14202b;
-        --suave: #5b6b7a;
-        --primaria: #0f6fb8;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --fundo: #0e1620;
-          --cartao: #17222e;
-          --texto: #e6edf3;
-          --suave: #94a3b3;
-          --primaria: #3b9be6;
-        }
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: var(--fundo);
-        color: var(--texto);
-        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-        line-height: 1.5;
-      }
-      main {
-        max-width: 420px;
-        margin: 16px;
-        padding: 28px 24px;
-        background: var(--cartao);
-        border-radius: 20px;
-        text-align: center;
-      }
-      img { width: 120px; height: 120px; border-radius: 28px; }
-      h1 { font-size: 1.6rem; margin: 12px 0 4px; }
-      p { margin: 0 0 16px; color: var(--suave); }
-      a { color: var(--primaria); font-weight: 700; }
-      nav { display: flex; flex-direction: column; gap: 8px; }
-    </style>
-  </head>
-  <body>
-    <main>
-      <img src="icone.png" alt="" />
-      <h1>Universal Mundi Guesser</h1>
-      <p>Quiz de geografia para Android · Geography quiz for Android</p>
-      <nav>
-        <a href="privacidade.html">Política de privacidade</a>
-        <a href="privacy.html" lang="en">Privacy policy</a>
-      </nav>
-    </main>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Universal Mundi Guesser · CjLabs</title>
+<meta name="description" content="Universal Mundi Guesser: quiz de geografia para Android, da CjLabs.">
+<link rel="icon" href="icone.png">
+<link rel="stylesheet" href="../estilo.css">
+</head>
+<body class="app-quiz">
+<main>
+  <a class="voltar" href="../index.html">← Voltar</a>
+  <div class="capa">
+    <img src="icone.png" alt="Ícone do Universal Mundi Guesser">
+    <h1>Universal Mundi Guesser</h1>
+    <p class="sub">Quiz de geografia para Android · Geography quiz for Android</p>
+    <div class="botoes">
+      <a class="botao" href="como-funciona.html">Como funciona</a>
+      <a class="botao secundario" href="privacidade.html">Política de privacidade</a>
+      <a class="botao secundario" href="privacy.html" lang="en">Privacy policy</a>
+    </div>
+  </div>
+  <footer>Universal Mundi Guesser · CjLabs · <a href="mailto:cirojosepadua@gmail.com">cirojosepadua@gmail.com</a></footer>
+</main>
+</body>
 </html>
