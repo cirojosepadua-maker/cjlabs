@@ -139,3 +139,34 @@ th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom
 tr:last-child td { border-bottom: none; }
 th { color: var(--suave); font-weight: 600; }
 footer { margin-top: 40px; color: var(--suave); font-size: 0.9rem; }
+
+/* Página "Biblioteca": imagens da loja para ver e baixar (gerada por ferramentas/biblioteca.cjs) */
+main.largo { max-width: 1040px; }
+.galeria { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin: 10px 0; }
+.galeria.largas { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.galeria.icones { grid-template-columns: repeat(auto-fill, minmax(150px, 180px)); }
+.peca {
+  margin: 0;
+  background: var(--cartao);
+  border: 1px solid var(--linha);
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.peca img { display: block; width: 100%; height: auto; border-radius: 8px; background: var(--destaque-fundo); }
+.peca figcaption { display: flex; flex-direction: column; gap: 2px; font-size: 0.85rem; line-height: 1.35; }
+.peca .nome { font-weight: 600; }
+.peca .detalhe { color: var(--suave); font-size: 0.8rem; }
+.peca .baixar {
+  margin-top: 6px;
+  align-self: flex-start;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--destaque-fundo);
+  color: var(--texto);
+  font-weight: 600;
+  text-decoration: none;
+}
+.peca .baixar:hover { color: var(--destaque); }

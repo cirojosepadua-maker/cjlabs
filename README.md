@@ -13,11 +13,14 @@ desatualizadas.
 ```
 index.html          página da CjLabs: um cartão por app, que leva à página dele
 estilo.css          estilo comum (cada app só troca a cor: classe no <body>)
-<app>/index.html    página do app: Como funciona, Política de privacidade, Privacy policy
+<app>/index.html    página do app: Como funciona, Biblioteca, Política de privacidade, Privacy policy
 <app>/como-funciona.html   o que é o app e como se joga (português)
 <app>/privacidade.html     política em português
 <app>/privacy.html         política em inglês
 <app>/icone.png
+<app>/biblioteca.html      imagens da loja para ver e baixar (gerada, veja abaixo)
+<app>/biblioteca/         miniaturas (previa/) e PNGs originais (original/), gerados
+ferramentas/biblioteca.cjs  gera as páginas Biblioteca
 ```
 
 Toda página fora a inicial tem o botão "← Voltar" no alto: a do app volta para
@@ -28,9 +31,27 @@ a da CjLabs; as outras voltam para a do app.
 | 4eroes | `4eroes/` | `app-4eroes` (dourado) |
 | Gude Rush | `gude-rush/` | `app-gude` (laranja) |
 | Universal Mundi Guesser (Quiz de Geografia) | `quiz-geografia/` | `app-quiz` (azul) |
+| Quero Dizer | `quero-dizer/` | `app-querodizer` (azul) |
 
 **App novo:** copiar a pasta de um app, trocar textos e ícone, criar a classe de
 cor em `estilo.css` (se quiser outra cor) e pôr o cartão no `index.html`.
+
+## Biblioteca (imagens da loja)
+
+A página Biblioteca de cada app mostra o ícone, o gráfico de destaque e as capturas de
+tela, com uma miniatura leve (WebP) e o PNG original para baixar. Ela é gerada a partir
+das pastas `loja` de cada projeto em `C:jogos` (o 4eroes fica em `the-magic-village`):
+
+```bash
+node ferramentas/biblioteca.cjs            # todos os apps
+node ferramentas/biblioteca.cjs gude-rush  # só um
+```
+
+Rode de novo sempre que as imagens de um app mudarem. A pasta `<app>/biblioteca/` e o
+`biblioteca.html` são apagados e refeitos: não mude nada neles à mão. O sharp vem de
+`C:jogosquiz-geografia
+ode_modules` (outro caminho: `SHARP=...`). App novo: acrescente
+a lista `APPS` no começo do script.
 
 ## Endereços para as lojas
 
