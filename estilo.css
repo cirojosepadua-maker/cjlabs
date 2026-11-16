@@ -140,33 +140,65 @@ tr:last-child td { border-bottom: none; }
 th { color: var(--suave); font-weight: 600; }
 footer { margin-top: 40px; color: var(--suave); font-size: 0.9rem; }
 
-/* Página "Biblioteca": imagens da loja para ver e baixar (gerada por ferramentas/biblioteca.cjs) */
-main.largo { max-width: 1040px; }
-.galeria { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin: 10px 0; }
-.galeria.largas { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-.galeria.icones { grid-template-columns: repeat(auto-fill, minmax(150px, 180px)); }
-.peca {
+
+/* Página "Biblioteca": álbum com os prints do jogo (gerada por ferramentas/biblioteca.cjs; visor em album.js) */
+main.largo { max-width: 1080px; }
+.album-dica { color: var(--suave); margin: 18px 0 14px; }
+.album { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.album.paisagem { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+.foto {
   margin: 0;
   background: var(--cartao);
   border: 1px solid var(--linha);
-  border-radius: 12px;
-  padding: 8px;
+  border-radius: 16px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
 }
-.peca img { display: block; width: 100%; height: auto; border-radius: 8px; background: var(--destaque-fundo); }
-.peca figcaption { display: flex; flex-direction: column; gap: 2px; font-size: 0.85rem; line-height: 1.35; }
-.peca .nome { font-weight: 600; }
-.peca .detalhe { color: var(--suave); font-size: 0.8rem; }
-.peca .baixar {
-  margin-top: 6px;
-  align-self: flex-start;
-  padding: 4px 12px;
-  border-radius: 999px;
-  background: var(--destaque-fundo);
-  color: var(--texto);
-  font-weight: 600;
-  text-decoration: none;
+.foto:hover { transform: translateY(-3px); border-color: var(--destaque); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14); }
+.foto button { display: block; width: 100%; padding: 0; border: 0; background: var(--destaque-fundo); cursor: zoom-in; }
+.foto button:focus-visible { outline: 3px solid var(--destaque); outline-offset: -3px; }
+.foto img { display: block; width: 100%; height: auto; }
+.foto figcaption { padding: 10px 14px 14px; display: flex; flex-direction: column; gap: 2px; }
+.foto figcaption strong { font-size: 1rem; }
+.foto figcaption span { color: var(--suave); font-size: 0.88rem; line-height: 1.4; }
+@media (max-width: 480px) {
+  .album { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .album.paisagem { grid-template-columns: 1fr; }
+  .foto figcaption { padding: 8px 10px 12px; }
+  .foto figcaption span { font-size: 0.8rem; }
 }
-.peca .baixar:hover { color: var(--destaque); }
+
+/* Visor: o print grande sobre um fundo escuro */
+body.visor-aberto { overflow: hidden; }
+.visor {
+  position: fixed; inset: 0; z-index: 10;
+  background: rgba(8, 10, 20, 0.94);
+  display: flex; align-items: center; justify-content: center;
+  padding: 16px;
+}
+.visor[hidden] { display: none; }
+.visor figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 12px; max-width: 100%; max-height: 100%; }
+.visor img { max-width: min(92vw, 1400px); max-height: calc(100vh - 150px); width: auto; height: auto; border-radius: 12px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); }
+.visor figcaption { color: #e8e6f0; text-align: center; max-width: 560px; display: flex; flex-direction: column; gap: 2px; }
+.visor figcaption strong { font-size: 1.1rem; }
+.visor-frase { color: #b9bbd0; font-size: 0.92rem; }
+.visor-contador { color: #8f92ad; font-size: 0.8rem; }
+.visor button {
+  position: absolute;
+  border: 0; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12); color: #fff;
+  width: 48px; height: 48px; font-size: 2rem; line-height: 1;
+  cursor: pointer;
+}
+.visor button:hover, .visor button:focus-visible { background: rgba(255, 255, 255, 0.25); outline: none; }
+.visor-fechar { top: 14px; right: 14px; }
+.visor-seta { top: 50%; transform: translateY(-50%); }
+.visor-seta.anterior { left: 14px; }
+.visor-seta.proxima { right: 14px; }
+@media (max-width: 600px) {
+  .visor-seta { top: auto; bottom: 14px; transform: none; }
+  .visor { padding-bottom: 76px; }
+  .visor img { max-height: calc(100vh - 230px); }
+}

@@ -18,8 +18,9 @@ estilo.css          estilo comum (cada app só troca a cor: classe no <body>)
 <app>/privacidade.html     política em português
 <app>/privacy.html         política em inglês
 <app>/icone.png
-<app>/biblioteca.html      imagens da loja para ver e baixar (gerada, veja abaixo)
-<app>/biblioteca/         miniaturas (previa/) e PNGs originais (original/), gerados
+<app>/biblioteca.html      álbum com os prints do jogo (gerada, veja abaixo)
+<app>/biblioteca/         os prints em WebP: miniatura (NN-mini.webp) e grande (NN.webp), gerados
+album.js            visor das páginas Biblioteca (ampliar, setas, deslizar o dedo)
 ferramentas/biblioteca.cjs  gera as páginas Biblioteca
 ```
 
@@ -36,22 +37,23 @@ a da CjLabs; as outras voltam para a do app.
 **App novo:** copiar a pasta de um app, trocar textos e ícone, criar a classe de
 cor em `estilo.css` (se quiser outra cor) e pôr o cartão no `index.html`.
 
-## Biblioteca (imagens da loja)
+## Biblioteca (álbum de prints)
 
-A página Biblioteca de cada app mostra o ícone, o gráfico de destaque e as capturas de
-tela, com uma miniatura leve (WebP) e o PNG original para baixar. Ela é gerada a partir
-das pastas `loja` de cada projeto em `C:jogos` (o 4eroes fica em `the-magic-village`):
+A página Biblioteca de cada app é um álbum com os prints de tela do jogo, cada um com um
+título e uma frase. Tocar num print abre ele grande, com setas (e deslizar o dedo) para os
+outros. Do Universal Mundi Guesser vão só os prints em inglês. A página é gerada a partir das
+pastas `loja` de cada projeto em `C:jogos` (o 4eroes fica em `the-magic-village`):
 
 ```bash
 node ferramentas/biblioteca.cjs            # todos os apps
 node ferramentas/biblioteca.cjs gude-rush  # só um
 ```
 
-Rode de novo sempre que as imagens de um app mudarem. A pasta `<app>/biblioteca/` e o
+Os prints, a ordem, os títulos e as frases ficam na lista `APPS`, no começo do script: para
+mudar algo ou pôr um app novo, mude lá e rode de novo. A pasta `<app>/biblioteca/` e o
 `biblioteca.html` são apagados e refeitos: não mude nada neles à mão. O sharp vem de
 `C:jogosquiz-geografia
-ode_modules` (outro caminho: `SHARP=...`). App novo: acrescente
-a lista `APPS` no começo do script.
+ode_modules` (outro caminho: `SHARP=...`).
 
 ## Endereços para as lojas
 
