@@ -1,5 +1,5 @@
 /* Estilo comum das páginas da CjLabs. Cada app troca só a cor de destaque
-   (classe no <body>: cjlabs, app-4eroes, app-gude, app-quiz, app-querodizer). */
+   (classe no <body>: cjlabs, app-4eroes, app-gude, app-quiz, app-querodizer, app-multidice). */
 :root {
   --fundo: #f6f3ea;
   --cartao: #fffdf7;
@@ -37,14 +37,17 @@
 body.app-gude { --destaque: #c4580f; --destaque-fundo: #fbe7d6; }
 body.app-quiz { --destaque: #0f6fb8; --destaque-fundo: #dcebf8; }
 body.app-querodizer { --destaque: #1f63c8; --destaque-fundo: #e1effd; }
+body.app-multidice { --destaque: #0f7f74; --destaque-fundo: #d8f2ee; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) body.app-gude { --destaque: #f8961e; --destaque-fundo: #33261c; }
   :root:not([data-theme="light"]) body.app-quiz { --destaque: #3b9be6; --destaque-fundo: #172b40; }
   :root:not([data-theme="light"]) body.app-querodizer { --destaque: #6cb4ff; --destaque-fundo: #16294a; }
+  :root:not([data-theme="light"]) body.app-multidice { --destaque: #4fc6b8; --destaque-fundo: #15302e; }
 }
 :root[data-theme="dark"] body.app-gude { --destaque: #f8961e; --destaque-fundo: #33261c; }
 :root[data-theme="dark"] body.app-quiz { --destaque: #3b9be6; --destaque-fundo: #172b40; }
 :root[data-theme="dark"] body.app-querodizer { --destaque: #6cb4ff; --destaque-fundo: #16294a; }
+:root[data-theme="dark"] body.app-multidice { --destaque: #4fc6b8; --destaque-fundo: #15302e; }
 
 * { box-sizing: border-box; }
 body {

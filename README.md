@@ -33,6 +33,7 @@ a da CjLabs; as outras voltam para a do app.
 | Gude Rush | `gude-rush/` | `app-gude` (laranja) |
 | Universal Mundi Guesser (Quiz de Geografia) | `quiz-geografia/` | `app-quiz` (azul) |
 | Quero Dizer | `quero-dizer/` | `app-querodizer` (azul) |
+| Multi Dice | `multi-dice/` | `app-multidice` (verde-água) |
 
 **App novo:** copiar a pasta de um app, trocar textos e ícone, criar a classe de
 cor em `estilo.css` (se quiser outra cor) e pôr o cartão no `index.html`.
@@ -60,3 +61,4 @@ ode_modules` (outro caminho: `SHARP=...`).
 - https://cirojosepadua-maker.github.io/cjlabs/4eroes/privacidade.html
 - https://cirojosepadua-maker.github.io/cjlabs/gude-rush/privacidade.html
 - https://cirojosepadua-maker.github.io/cjlabs/quiz-geografia/privacidade.html
+- https://cirojosepadua-maker.github.io/cjlabs/multi-dice/privacidade.html (inglês: `multi-dice/privacy.html`)

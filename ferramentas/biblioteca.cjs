@@ -76,6 +76,20 @@ const APPS = [
       ['8-bestiario.png', 'Como jogar', 'As regras, os heróis e os invasores explicados dentro do jogo.'],
     ],
   },
+  {
+    pasta: 'multi-dice', nome: 'Multi Dice', classe: 'app-multidice',
+    sub: 'Rolador de dados',
+    origem: 'multi-dice/loja/capturas',
+    fotos: [
+      ['01_simples.png', 'Qualquer dado', 'Escolha quantos dados e quantos lados, de 2 a 1000.'],
+      ['02_rpg.png', 'Notação de RPG', 'Escreva 4d6k3, 2d20kl1 ou 1d20+5 e veja quem ficou de fora.'],
+      ['03_aula.png', 'Aprenda a notação', 'Uma aula passo a passo, com exemplos que você rola na hora.'],
+      ['04_ordem.png', 'Quem começa?', 'Dados com nomes: sorteie uma ordem, sem repetir ninguém.'],
+      ['05_moeda.png', 'Cara ou coroa', 'Moedas e dados de texto, com uma cor para cada face.'],
+      ['06_favoritos.png', 'Favoritos', 'Guarde as suas rolagens e role de novo com um toque.'],
+      ['07_opcoes.png', 'Chacoalhe para rolar', 'Chacoalhe o celular para rolar, com a força que preferir.'],
+    ],
+  },
 ];
 
 const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
