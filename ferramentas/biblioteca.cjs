@@ -90,6 +90,21 @@ const APPS = [
       ['07_opcoes.png', 'Chacoalhe para rolar', 'Chacoalhe o celular para rolar, com a força que preferir.'],
     ],
   },
+  {
+    pasta: 'olho-do-furacao', nome: 'Olho do Furacão', classe: 'app-furacao',
+    sub: 'Jogue coisas no furacão e veja girar',
+    origem: 'olho-do-furacao/loja/capturas',
+    fotos: [
+      ['01_tempestade.png', 'Tempestade', 'Jogue as coisas no furacão: elas giram, encolhem e somem no olho.'],
+      ['02_noite.png', 'Noite estrelada', 'Lua, estrelas cadentes e o pacote de Natal girando no escuro.'],
+      ['03_buraco_negro.png', 'Buraco negro', 'Um disco de fogo no espaço engolindo os brinquedos.'],
+      ['04_por_do_sol.png', 'Pôr do sol', 'Céu laranja e a cozinha inteira voando: panela, bule e bolo.'],
+      ['05_areia.png', 'Tempestade de areia', 'Coisas grandes se desmancham perto do olho: celeiro, trator, feno.'],
+      ['06_redemoinho.png', 'Redemoinho no mar', 'Faixas de espuma e respingos levando a escola embora.'],
+      ['07_menu.png', 'Menu', 'O furacão gira atrás do menu, com umas coisas de enfeite.'],
+      ['08_cenario_e_coisas.png', 'Cenário e coisas', 'Escolha um de 6 céus e um ou mais dos 6 pacotes de coisas.'],
+    ],
+  },
 ];
 
 const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
