@@ -65,4 +65,4 @@ ode_modules` (outro caminho: `SHARP=...`).
 - https://cirojosepadua-maker.github.io/cjlabs/quiz-geografia/privacidade.html
 - https://cirojosepadua-maker.github.io/cjlabs/multi-dice/privacidade.html (inglês: `multi-dice/privacy.html`)
 - https://cirojosepadua-maker.github.io/cjlabs/olho-do-furacao/privacidade.html (inglês: `olho-do-furacao/privacy.html`)
-- https://cirojosepadua-maker.github.io/cjlabs/encaixe/privacidade.html (inglês: `encaixe/privacy.html`)
+- https://cirojosepadua-maker.github.io/cjlabs/encaixe/privacidade.html (inglês: `encaixe/privacy.html`; o Encaixe também tem a página do app em inglês, `encaixe/en.html` e `encaixe/how-it-works.html`)
