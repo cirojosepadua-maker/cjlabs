@@ -35,6 +35,7 @@ a da CjLabs; as outras voltam para a do app.
 | Quero Dizer | `quero-dizer/` | `app-querodizer` (azul) |
 | Multi Dice | `multi-dice/` | `app-multidice` (verde-água) |
 | Olho do Furacão | `olho-do-furacao/` | `app-furacao` (violeta) |
+| Encaixe | `encaixe/` | `app-encaixe` (rosa) |
 
 **App novo:** copiar a pasta de um app, trocar textos e ícone, criar a classe de
 cor em `estilo.css` (se quiser outra cor) e pôr o cartão no `index.html`.
@@ -64,3 +65,4 @@ ode_modules` (outro caminho: `SHARP=...`).
 - https://cirojosepadua-maker.github.io/cjlabs/quiz-geografia/privacidade.html
 - https://cirojosepadua-maker.github.io/cjlabs/multi-dice/privacidade.html (inglês: `multi-dice/privacy.html`)
 - https://cirojosepadua-maker.github.io/cjlabs/olho-do-furacao/privacidade.html (inglês: `olho-do-furacao/privacy.html`)
+- https://cirojosepadua-maker.github.io/cjlabs/encaixe/privacidade.html (inglês: `encaixe/privacy.html`)

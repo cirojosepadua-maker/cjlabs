@@ -105,6 +105,21 @@ const APPS = [
       ['08_cenario_e_coisas.png', 'Cenário e coisas', 'Escolha um de 6 céus e um ou mais dos 6 pacotes de coisas.'],
     ],
   },
+  {
+    pasta: 'encaixe', nome: 'Encaixe', classe: 'app-encaixe',
+    sub: 'Quebra-cabeça geométrico',
+    origem: 'encaixe/loja/capturas',
+    fotos: [
+      ['01_menu.png', 'Menu', 'Jogue os 1000 níveis ou monte formas à vontade no modo livre.'],
+      ['02_niveis.png', 'Níveis', '20 mundos de 50 níveis, com um desafio a cada 10.'],
+      ['03_estrela.png', 'Estrela', 'Formas em grade de triângulos: gire as peças até elas caberem.'],
+      ['04_coracao.png', 'Coração', 'Arraste as peças até o tabuleiro: perto do lugar, elas se encaixam sozinhas.'],
+      ['05_vitoria.png', 'Solução perfeita', 'Monte com os movimentos da melhor solução e ganhe 3 estrelas.'],
+      ['06_triangulo_vazado.png', 'Peças espelhadas', 'Em alguns níveis é preciso virar as peças do avesso.'],
+      ['07_modo_livre.png', 'Modo livre', 'Escolha um de 22 formatos, o tamanho e quantas peças.'],
+      ['08_como_jogar.png', 'Como jogar', 'As regras, os movimentos e as estrelas explicados dentro do jogo.'],
+    ],
+  },
 ];
 
 const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
